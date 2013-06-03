@@ -19,9 +19,20 @@ a {
   width: 100%;
   height: 60px;
   background-color: black;
-  -webkit-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-  -moz-box-shadow: 0 1px 10px rgba(0,0,0,0.1);
-  box-shadow: 0 1px 10px rgba(0,0,0,0.1);
+  background-color: #222;
+  background-color: #222222;
+  background-repeat: repeat-x;
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#4b4b4b), to(#222222));
+  background-image: -moz-linear-gradient(top, #4b4b4b, #222222);
+  background-image: -ms-linear-gradient(top, #4b4b4b, #222222);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #4b4b4b), color-stop(100%, #222222));
+  background-image: -webkit-linear-gradient(top, #4b4b4b, #222222);
+  background-image: -o-linear-gradient(top, #4b4b4b, #222222);
+  background-image: linear-gradient(top, #4b4b4b, #222222);
+  -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.25),inset 0 -1px 0 rgba(0, 0, 0, 0.1);
+
 }
 
 #details {
@@ -33,6 +44,7 @@ a {
   position:fixed;
   top:0px;
   right:0px;
+  box-shadow: -4px 2px 10px 1px #aaaaaa;
 }
 
 #list {
@@ -73,7 +85,6 @@ a {
 .title {
   color:#ff2b06;
   text-decoration:none;
-  font-weight:bold;
   font-size:16px;
   padding-top:10px;
 }
@@ -96,7 +107,6 @@ a {
   margin-right:auto;
   display:block;
   font-size:40px;
-  font-weight:bold;
   margin-top:20px;
   text-align:center;
 }
